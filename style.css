@@ -1,3 +1,4 @@
+/* global */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body::-webkit-scrollbar-track {
     background-color: #1B1B1B;
 }
 
-
+/* jumbo */
 #jumbo {
     background-image: url(https://i.postimg.cc/sxb9Bc9H/background-eddie.jpg);
     background-position: center;
@@ -34,7 +35,6 @@ body::-webkit-scrollbar-track {
 #jumbo .header {
     display: flex;
     flex-direction: column;
-    
 }
 
 #jumbo .header .nav-menu {
@@ -72,10 +72,9 @@ body::-webkit-scrollbar-track {
 }
 
 #jumbo .header .buttons {
-   display: flex;
-   justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
-
 
 #jumbo .header .buttons a {
     background-color: #1B1B1B;
@@ -99,8 +98,7 @@ body::-webkit-scrollbar-track {
     display: grid;
     grid-template-columns: 35% 1fr;
     height: 65vh;
-    margin: 100px;       
-
+    margin: 100px;
 }
 
 #coach .coach-img {
@@ -130,7 +128,6 @@ body::-webkit-scrollbar-track {
 }
 
 
-
 /* schedule */
 #calendar {
     width: 80%;
@@ -155,25 +152,23 @@ body::-webkit-scrollbar-track {
     font-size: 2rem;
 }
 
-#calendar .calendar .row3 :nth-child(1)  {
-      font-size: 1rem;
-}
-  
-
-#calendar .calendar .row3 :nth-child(7)  {
+#calendar .calendar .row3 :nth-child(1) {
     font-size: 1rem;
 }
 
-#calendar .calendar .row3 .span  {
+#calendar .calendar .row3 :nth-child(7) {
+    font-size: 1rem;
+}
+
+#calendar .calendar .row3 .span {
     font-size: .9rem;
 }
 
-#calendar .calendar .row4 .span  {
+#calendar .calendar .row4 .span {
     font-size: .9rem;
 }
-  
 
-  #calendar .calendar li {
+#calendar .calendar li {
     float: left;
     display: block;
     display: flex;
@@ -182,15 +177,14 @@ body::-webkit-scrollbar-track {
     text-align: center;
     padding: 18px 10px;
     font-size: 1.5rem;
-  }
+}
 
- 
-
-  #calendar .calendar .row .row1, .row2, .row3, .row4 {
+#calendar .calendar .row .row1,
+.row2,
+.row3,
+.row4 {
     margin-top: 20px;
-  }
-  
- 
+}
 
 
 /* faqs */
@@ -201,11 +195,11 @@ body::-webkit-scrollbar-track {
     margin-bottom: 150px;
 }
 
-#faqs .faqs  {
+#faqs .faqs {
     display: flex;
 }
 
-#faqs h3  {
+#faqs h3 {
     color: #1B1B1B;
     border-radius: 12px;
     font-weight: 600;
@@ -278,7 +272,6 @@ body::-webkit-scrollbar-track {
     padding-bottom: 100px;
 }
 
-
 #storefront .productTag {
     border-radius: 12px;
     font-weight: 600;
@@ -293,12 +286,11 @@ body::-webkit-scrollbar-track {
     border: 2px solid white;
 }
 
-
 #storefront .storefront {
     display: flex;
     flex-direction: row;
     padding: 25px 40px;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 #storefront .storefront .product {
@@ -316,7 +308,7 @@ body::-webkit-scrollbar-track {
 }
 
 #storefront .storefront .product .productImg {
-    margin: auto;   
+    margin: auto;
     width: 225px;
     object-fit: cover;
     background-color: white;
@@ -362,7 +354,7 @@ body::-webkit-scrollbar-track {
 #footer {
     background-color: lightgray;
     max-width: 100%;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -377,7 +369,7 @@ body::-webkit-scrollbar-track {
 
 #footer .footer .social {
     text-align: right;
-} 
+}
 
 #footer .footer .social i {
     color: #1B1B1B;
@@ -391,7 +383,6 @@ body::-webkit-scrollbar-track {
 
 #footer .footer .buttons {
     margin-top: 25px;
-    
 }
 
 #footer .footer .buttons a {
@@ -415,12 +406,12 @@ body::-webkit-scrollbar-track {
     background-color: #1B1B1B;
 }
 
-#subfooter .subfooter  {
+#subfooter .subfooter {
     margin: auto;
     width: 300px;
     border-left: 1px solid white;
-    border-top:  1px solid white;
-    border-right:  1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
     padding: 10px;
 }
 
@@ -428,12 +419,6 @@ body::-webkit-scrollbar-track {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
-    opacity: .5;    
+    opacity: .5;
     font-size: .6rem;
-
 }
-
-
-
-
-
