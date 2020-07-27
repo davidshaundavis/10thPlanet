@@ -1,1 +1,1 @@
-let variable;
+let;

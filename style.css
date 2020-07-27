@@ -2,12 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     text-decoration: none;
-    font-family: 'Nova Mono', 'Lato', sans-serif;
+    font-family: 'Open Sans', 'Lato', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6000c0;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1B1B1B;
+}
+
+
 #jumbo {
-    background-image: url(background_eddie.jpeg);
+    background-image: url(https://i.postimg.cc/sxb9Bc9H/background-eddie.jpg);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -20,49 +34,46 @@
 #jumbo .header {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
+    
 }
 
 #jumbo .header .nav-menu {
-    margin-top: 50px;
-    padding-top: 7px;
-    
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
 }
 
 #jumbo .header .nav-menu a {
     background-color: #1B1B1B;
     color: white;
-    border-radius: 12px;
+    border-radius: 8px;
     font-weight: 600;
-    margin-left: 100px;
-    margin-right: 100px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.3em;
+    text-transform: uppercase;
 }
 
 #jumbo .header .nav-menu a:hover {
-    color: black;
+    color: #1B1B1B;
     background-color: white;
 }
 
 #jumbo .header .perry {
     color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 350px;
-    margin-bottom: 100px;
-    font-size: 4.2rem;
+    margin: auto;
+    margin-top: 325px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    font-size: 10em;
     font-weight: 800;
-    letter-spacing: 20px;
-    opacity: .6;
+    letter-spacing: 2.2rem;
+    opacity: .4;
 }
 
 #jumbo .header .buttons {
-   margin-left: auto;
-   margin-right: auto;
+   display: flex;
+   justify-content: space-around;
 }
 
 
@@ -71,15 +82,358 @@
     color: white;
     border-radius: 8px;
     font-weight: 600;
-    margin-left: 100px;
-    margin-right: 100px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.3em;
+    text-transform: uppercase;
 }
 
 #jumbo .header .buttons a:hover {
     color: #1B1B1B;
     background-color: white;
 }
+
+
+/* coach */
+#coach {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    height: 65vh;
+    margin: 100px;       
+
+}
+
+#coach .coach-img {
+    max-width: 100%;
+}
+
+#coach .coach-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#coach .coach-info h3 {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+}
+
+#coach .coach-info p {
+    text-align: center;
+    padding: 0 40px;
+    font-size: 1em;
+    line-height: 2;
+    letter-spacing: 1.2px;
+}
+
+
+
+/* schedule */
+#calendar {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    border: 1px solid #1B1B1B;
+    margin-bottom: 150px;
+}
+
+#calendar .calendar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+}
+
+#calendar .calendar .row1 {
+    background-color: #1b1b1b;
+    color: white;
+    font-weight: 900;
+    opacity: .9;
+    font-size: 2rem;
+}
+
+#calendar .calendar .row3 :nth-child(1)  {
+      font-size: 1rem;
+}
+  
+
+#calendar .calendar .row3 :nth-child(7)  {
+    font-size: 1rem;
+}
+
+#calendar .calendar .row3 .span  {
+    font-size: .9rem;
+}
+
+#calendar .calendar .row4 .span  {
+    font-size: .9rem;
+}
+  
+
+  #calendar .calendar li {
+    float: left;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 1.5rem;
+  }
+
+ 
+
+  #calendar .calendar .row .row1, .row2, .row3, .row4 {
+    margin-top: 20px;
+  }
+  
+ 
+
+
+/* faqs */
+#faqs {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+#faqs .faqs  {
+    display: flex;
+}
+
+#faqs h3  {
+    color: #1B1B1B;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+#faqs .faqs .questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#faqs .faqs .questions p {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#faqs .faqs .questions p:nth-of-type(odd) {
+    background-color: #0000ff;
+    opacity: .6;
+    color: white;
+    border-radius: 8px;
+}
+
+#faqs .faqs .answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+}
+
+#faqs .faqs .answers p {
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#faqs .faqs .answers p:nth-of-type(even) {
+    background-color: #6000c0;
+    opacity: .6;
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* storefront */
+#storefront {
+    width: 100%;
+    height: 100vh;
+    background-color: #1B1B1B;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+
+#storefront .productTag {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+    border: 2px solid white;
+}
+
+
+#storefront .storefront {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 40px;
+    justify-content: space-around; 
+}
+
+#storefront .storefront .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #1B1B1B;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 25%;
+}
+
+#storefront .storefront .product .productImg {
+    margin: auto;   
+    width: 225px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 12px;
+}
+
+#storefront .storefront .product p {
+    color: #1B1B1B;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+#storefront .storefront .product a {
+    background-color: #1B1B1B;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 8px 10px;
+    font-size: 1.1em;
+}
+
+#storefront .shopMore {
+    text-align: center;
+}
+
+#storefront .shopMore a {
+    background-color: #1B1B1B;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#storefront .shopMore a:hover {
+    color: #1B1B1B;
+    background-color: white;
+}
+
+
+/* footer */
+#footer {
+    background-color: lightgray;
+    max-width: 100%;
+    padding-bottom: 50px;    
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer .footer .social {
+    text-align: right;
+} 
+
+#footer .footer .social i {
+    color: #1B1B1B;
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+
+#footer .footer .social i:hover {
+    transform: scale(1.3);
+}
+
+#footer .footer .buttons {
+    margin-top: 25px;
+    
+}
+
+#footer .footer .buttons a {
+    background-color: #1B1B1B;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#footer .footer .buttons a:hover {
+    color: #1B1B1B;
+    background-color: white;
+    transform: scale(1.3);
+}
+
+#subfooter {
+    background-color: #1B1B1B;
+}
+
+#subfooter .subfooter  {
+    margin: auto;
+    width: 300px;
+    border-left: 1px solid white;
+    border-top:  1px solid white;
+    border-right:  1px solid white;
+    padding: 10px;
+}
+
+#subfooter .subfooter p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    opacity: .5;    
+    font-size: .6rem;
+
+}
+
+
+
+
 
